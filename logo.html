@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wikinota Logo CSS</title>
+    <style>
+        :root {
+            --wikinota-logo-color-background: #000;
+            --wikinota-logo-color-main: #fff;
+        }
+
+        .wikinota-logo {
+            position: relative;
+            font-size: 50px;
+            background: var(--wikinota-logo-color-background);
+            height: 10em;
+            width: 10em;
+            border-radius: 2em;
+        }
+
+        .wikinota-logo-outerBlock {
+            position: absolute;
+            left: 3.5em;
+            top: 1.5em;
+            height: 7em;
+            width: 5.5em;
+            border-radius: 1em;
+            background: var(--wikinota-logo-color-main);
+            transform: rotate(17deg);
+        }
+
+        .wikinota-logo-innerBlock {
+            display: block;
+            margin: 10% auto;
+            height: 10%;
+            width: 80%;
+            border-radius: 0.1em;
+            background: var(--wikinota-logo-color-background);
+        }
+
+        .wikinota-logo-speedlines span{
+            position: absolute;
+            background: var(--wikinota-logo-color-main);
+            height: 0.5em;
+            border-radius: 1em;
+            left: 0.5em;
+        }
+
+        .wikinota-logo-speedlines span:nth-child(1) {
+            top: 1.2em;
+            width: 3.8em;
+        }
+        .wikinota-logo-speedlines span:nth-child(2) {
+            top: 3em;
+            width: 3.2em;
+        }
+        .wikinota-logo-speedlines span:nth-child(3) {
+            top: 5em;
+            width: 2.6em;
+        }
+        .wikinota-logo-speedlines span:nth-child(4) {
+            top: 6.7em;
+            width: 2.2em;
+        }
+        .wikinota-logo-speedlines span:nth-child(5) {
+            top: 8.4em;
+            width: 4.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wikinota-logo">
+        <div class="wikinota-logo-speedlines">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="wikinota-logo-outerBlock">
+            <span class="wikinota-logo-innerBlock"></span>
+            <span class="wikinota-logo-innerBlock"></span>
+            <span class="wikinota-logo-innerBlock"></span>
+            <span class="wikinota-logo-innerBlock"></span>
+            <span class="wikinota-logo-innerBlock"></span>
+        </div>
+    </div>
+</body>
+
+</html>
